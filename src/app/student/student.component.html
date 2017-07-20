@@ -1,0 +1,12 @@
+<table>
+    <tbody>
+
+    <tr *ngFor="let person of people">
+      <td>  {{person.name}}</td>
+
+    </tr>
+
+    </tbody>
+</table>
+<input type=" text"value="name" [(ngModel)]="people.name" #fname> 
+<button (click)=  "addAll(fname)"> add </button>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component,Input } from '@angular/core';
+import { StudentService } from './student.service';
+import { Person } from 'app/person';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  
+    @Input() studentdetails ;
+    @Input()studentList: Person[]=[];
+ constructor(){}
+
 }
